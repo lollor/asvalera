@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    table,th,td {
+        @apply border border-black;
+    }
+    th, td {
+        @apply p-1 md:p-2 lg:p-3;
+    }
+
+}

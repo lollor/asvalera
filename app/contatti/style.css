@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+.map {
+    @apply mx-auto w-full my-4
+  }
+  .map > iframe {
+    @apply w-full h-[200px] shadow-xl border mt-1 md:h-[400px]
+  }
+  .map > h2 {
+    @apply text-xl font-semibold
+  }
+}

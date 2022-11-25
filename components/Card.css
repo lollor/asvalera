@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+.card {
+    @apply border border-gray-400 md:w-[31%] shadow-[0px_8px_15px_5px_rgba(0,0,0,0.17)] rounded-b-lg
+  }
+  .card img {
+    @apply border-b border-gray-400
+  }
+  .informazioni {
+    @apply p-2
+  }
+}

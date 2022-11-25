@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .footer {
+        @apply bg-black px-4
+    }
+    .immagini {
+        @apply flex justify-between items-start flex-col pb-3 lg:flex-row pl-5 md:items-center lg:pb-0
+    }
+    
+}

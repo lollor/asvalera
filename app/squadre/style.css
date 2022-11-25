@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    div.table-md-screen {
+        @apply hidden md:table mx-auto py-12 my-[30px]
+    }
+    div.table-md-screen th {
+        @apply bg-blue-500 text-white
+    }
+    div.table-md-screen table {
+        @apply shadow-lg
+    }
+    div.table-md-screen table, td, th {
+        @apply border-black border text-center p-2
+    }
+
+    div.table-sm-screen {
+        @apply md:hidden grid gap-3
+    }
+    div.table-sm-screen > .squadra-sm-screen {
+        @apply shadow-lg border py-2 px-3 text-base rounded-lg
+    }
+    div.table-sm-screen > .squadra-sm-screen > p > span {
+        @apply font-bold 
+    }
+}
