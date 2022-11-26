@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://asvalera.vercel.app/</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/chisiamo</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/progettoeducativo</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/iscrizioni</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/modulistica</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/eventi</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/organigramma</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/sponsor</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/contatti</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/progettoeducativo.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/pe_allenatore.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/pe_atleta.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/pe_dirigente.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/pe_genitore.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/pe_prete.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valeraw</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valerak</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valera04</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valera03</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valera05</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valera09</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/squadre/valera12</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/iscrizioni/at_minorenne.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/iscrizioni/at_maggiorenne.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/iscrizioni/di_minorenne.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/iscrizioni/di_maggiorenne.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/iscrizioni/vademecum.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/detrazione_irpef.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/info_irpef.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asvalera.vercel.app/files/organigramma2223.pdf</loc>
+  <lastmod>2022-11-26T00:00:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
