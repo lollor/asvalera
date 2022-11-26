@@ -23,9 +23,6 @@ type PageProps = {
 }
 
 const fetchSquadra = async (nomeLink: string) => {
-   const responseSquadra: Squadra = await getSquadra(nomeLink);
-   return responseSquadra;
-
    const res = await fetch("https://" + process.env.OLD_URL + "/api/squadra/" + nomeLink, { next: { revalidate: 60 } });
    const { result: squadra }: ResponseSquadra = await res.json();
    return squadra;
