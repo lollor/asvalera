@@ -43,6 +43,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
          }
          const responseDelete:Response = await deleteGiocatore(req.query.idGiocatore as string);
          responseDelete.status ? res.status(200).json(responseDelete) : res.status(500).json(responseDelete);
+         break;
       default:
          res.status(405).json({ status: false, message: `Metodo ${req.method} non supportato`, result: null });
          break;
