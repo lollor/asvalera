@@ -1,5 +1,4 @@
 import React from "react";
-import { getSquadra } from "../../../database/model";
 import { Squadra } from "../../../typings";
 import "./style.css";
 
