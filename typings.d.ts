@@ -23,3 +23,9 @@ export type Giocatore = {
    linkImmagine: string,
    dataDiNascita: string,
 }
+
+export type Response = {
+   status: boolean,
+   message: string,
+   result: any
+}

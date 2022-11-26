@@ -1,6 +1,10 @@
 import React from "react";
+import { getSquadra, getSquadre } from "../../../database/model";
 import { Squadra } from "../../../typings";
+import { notFound } from "next/navigation"
 import "./style.css";
+
+export const revalidate = 60;
 
 type ResponseSquadra = {
    status: boolean,
@@ -22,9 +26,15 @@ type PageProps = {
 }
 
 const fetchSquadra = async (nomeLink: string) => {
-   const res = await fetch("https://" + process.env.OLD_URL + "/api/squadra/" + nomeLink, { next: { revalidate: 60 } });
-   const { result: squadra }: ResponseSquadra = await res.json();
+   const squadra : Squadra | undefined = await getSquadra(nomeLink);
+   if (squadra === undefined) {
+      return notFound();
+   }
    return squadra;
+
+   const res = await fetch("https://" + process.env.OLD_URL + "/api/squadra/" + nomeLink, { next: { revalidate: 60 } });
+   const { result: squadraFromFetch }: ResponseSquadra = await res.json();
+   return squadraFromFetch;
 }
 
 export default async function SquadraPage({ params: { squadra: nomeLinkSquadra } }: PageProps) {
@@ -75,10 +85,13 @@ export default async function SquadraPage({ params: { squadra: nomeLinkSquadra }
 }
 
 export async function generateStaticParams(){
-   const res = await fetch("https://" + process.env.OLD_URL + "/api/squadra", { next: { revalidate: 60 } });
-   const { result: squadre }: ResponseSquadrePaths = await res.json();
+   const squadre: Squadra[] = await getSquadre();
+   return squadre.map(squadra => ({squadra: squadra.nomeLink } ));
 
-   return squadre.map((squadra) => {
+   const res = await fetch("https://" + process.env.OLD_URL + "/api/squadra", { next: { revalidate: 60 } });
+   const { result: squadreFromFetch }: ResponseSquadrePaths = await res.json();
+
+   return squadreFromFetch.map((squadra) => {
       return {
          squadra: squadra.nomeLink
       }

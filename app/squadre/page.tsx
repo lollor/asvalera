@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { getSquadre } from "../../database/model";
 import { Squadra } from "../../typings";
 import "./style.css";
+
+export const revalidate = 60;
 
 type ResponseSquadra = {
    status: boolean,
@@ -9,9 +12,11 @@ type ResponseSquadra = {
 }
 
 const fetchSquadre = async () => {
+   return (await getSquadre()) as Squadra[];
+
    const res = await fetch("https://" + process.env.OLD_URL + "/api/squadra", { next: { revalidate: 60 } });
-   const { result: squadre }: ResponseSquadra = await res.json();
-   return squadre;
+   const { result: squadreResponse }: ResponseSquadra = await res.json();
+   return squadreResponse;
 }
 
 export default async function Squadre() {
