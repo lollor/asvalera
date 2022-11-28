@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-.card {
-    @apply border border-gray-400 md:w-[31%] shadow-[0px_8px_15px_5px_rgba(0,0,0,0.17)] rounded-b-lg
-  }
-  .card img {
-    @apply border-b border-gray-400
-  }
-  .informazioni {
-    @apply p-2
-  }
+	.card {
+		@apply border border-gray-400 shadow-[0px_8px_15px_5px_rgba(0,0,0,0.17)] rounded-lg;
+	}
+   .image-container {
+      @apply w-full sm:h-[300px];
+   }
+	.image-container img {
+		@apply sm:object-contain rounded-t-lg mx-auto sm:h-full xl:object-cover;
+	}
+	.card img {
+		@apply border-b border-gray-400;
+	}
+	.informazioni {
+		@apply p-2 flex justify-between items-center;
+	}
+	.informazioni p {
+		@apply text-slate-500 text-sm md:text-base;
+	}
+	.informazioni h3 {
+		@apply text-[1.25em] sm:text-[1.35em] md:text-[1.55em] lg:text-[1.75em] font-bold;
+	}
 }
