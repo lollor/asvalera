@@ -51,7 +51,9 @@ export default async function SquadraPage({ params: { squadra: nomeLinkSquadra }
                <p><span className="font-bold">Allenamenti</span>: {squadra.allenamenti}</p>
                <p><span className="font-bold">Partita</span>: {squadra.partita}</p>
                <div className="my-4 lg:my-6">
-                  <div className="lg:h-[400px] lg:w-[800px] border border-black h-[200px] w-full"></div>
+                  <div className="border border-black border-opacity-70 rounded shadow-2xl mx-auto">
+                     <img src={squadra.linkImmagine} alt={squadra.nome} className="w-full xl:w-[780px] rounded object-cover" />
+                  </div>
                </div>
             </div>
             <div>
