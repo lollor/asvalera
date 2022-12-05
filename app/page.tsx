@@ -9,7 +9,7 @@ export default function Page() {
             <img className="object-cover h-full w-full rounded" src="/files/striscione.jpg"></img>
          </div>
          <div className="sezione">
-            <h1 className="titoletto">Eventi</h1>
+            <h1 className="titoletto">News</h1>
             {/* <p className="font-bold text-center md:text-[26px]">Pagina in costruzione</p> */}
             <CardContainer />
          </div>

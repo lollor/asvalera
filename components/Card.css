@@ -9,10 +9,10 @@
       @apply w-full sm:h-[300px];
    }
 	.image-container img {
-		@apply sm:object-contain rounded-t-lg mx-auto sm:h-full xl:object-cover;
+		@apply rounded-t-lg mx-auto sm:h-full;
 	}
 	.card img {
-		@apply border-b border-gray-400;
+		@apply border-b border-gray-400 object-contain;
 	}
 	.informazioni {
 		@apply p-2 flex justify-between items-center;
