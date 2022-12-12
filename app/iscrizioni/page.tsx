@@ -10,7 +10,7 @@ export default function Page(){
                     <div className="lg:w-2/3">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">ATLETI</h1>
                         <div className="my-4 border border-opacity-50  mx-auto block shadow-2xl">
-                            <img src={logo.src} className="lg:h-[450px] h-[150px] w-auto mx-auto"></img>
+                            <img src={logo.src} className="lg:h-[450px] h-[150px] object-contain mx-auto"></img>
                             <div className="md:flex justify-around px-8">
                                 <a href={"/files/iscrizioni/at_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Minorenne</a>
                                 <a href={"/files/iscrizioni/at_maggiorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Maggiorenne</a>
@@ -20,7 +20,7 @@ export default function Page(){
                     <div className="lg:w-2/3">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">DIRIGENTI</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl">
-                            <img src={logo.src} className="lg:h-[450px] h-[150px] w-auto mx-auto"></img>
+                            <img src={logo.src} className="lg:h-[450px] h-[150px] object-contain mx-auto"></img>
                             <div className="md:flex justify-around px-8">
                                 <a href={"/files/iscrizioni/di_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Minorenne {"(≥16 anni)"}</a>
                                 <a href={"/files/iscrizioni/di_maggiorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Maggiorenne</a>
@@ -30,7 +30,7 @@ export default function Page(){
                 </div>
             </div>
             <div className="sezione">
-                <div className="md:flex justify-between">
+                <div className="md:flex md:items-end md:gap-2 justify-between">
                     <div>
                         <h1 className="text-center text-2xl font-bold md:text-3xl">QUOTE D'ISCRIZIONE</h1>
                         <img src={quote.src} className="h-[350px] w-auto mx-auto lg:h-[450px] my-4 border border-opacity-50 shadow-2xl" ></img>
@@ -38,7 +38,7 @@ export default function Page(){
                     <div>
                         <h1 className="text-center text-2xl font-bold md:text-3xl">VADEMECUM</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl md:flex flex-col justify-center md:h-[450px]">
-                            <img src={logo.src} className="lg:h-[250px] w-auto h-[150px] mx-auto"></img>
+                            <img src={logo.src} className="lg:h-[250px] object-contain h-[150px] mx-auto"></img>
                             <a href={"/files/iscrizioni/vademecum.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Scarica file</a>
                         </div>
                     </div>
