@@ -1,7 +1,8 @@
 import getDb from "../connection";
 import SquadraSchema from "./squadra";
 import GiocatoreSchema from "./giocatore";
-import { Squadra, Response, Giocatore } from "../../typings";
+import { Squadra, Response, Giocatore, News } from "../../typings";
+import NewsSchema from "./news";
 
 const getSquadre = async () => {
     await getDb();
@@ -198,3 +199,83 @@ export {getGiocatore};
 export {createGiocatore};
 export {updateGiocatore};
 export {deleteGiocatore};
+
+const creaNews = async (news: News) => {
+    await getDb();
+    try {
+        await NewsSchema.create(news);
+    } catch (error) {
+        return {
+            status: false,
+            message: "Errore durante la creazione della news",
+            result: error
+        } as Response;
+    }
+    return {
+        status: true,
+        message: "News creata con successo",
+        result: null
+    } as Response;
+};
+
+const getNews = async () => {
+    await getDb();
+    try {
+        const news = await NewsSchema.find();
+        return news as News[];
+    } catch (error) {
+        return undefined;
+    }
+}
+
+const getNewsByIdOrTitle = async (idOrTitle: string) => {
+    await getDb();
+    try {
+        const news = await NewsSchema.findOne({titolo: idOrTitle}) || await NewsSchema.findById(idOrTitle);
+        return news as News;
+    } catch (error) {
+        return undefined;
+    }
+}
+
+const updateNews = async (idNews: string, news: News) => {
+    await getDb();
+    try {
+        await NewsSchema.findByIdAndUpdate(idNews, news);
+    } catch (error) {
+        return {
+            status: false,
+            message: "Errore durante l'aggiornamento della news",
+            result: error
+        } as Response;
+    }
+    return {
+        status: true,
+        message: "News aggiornata con successo",
+        result: null
+    } as Response;
+};
+
+const deleteNews = async (idNews: string) => {
+    await getDb();
+    try {
+        await NewsSchema.findByIdAndDelete(idNews);
+    } catch (error) {
+        return {
+            status: false,
+            message: "Errore durante l'eliminazione della news",
+            result: error
+        } as Response;
+    }
+    return {
+        status: true,
+        message: "News eliminata con successo",
+        result: null
+    } as Response;
+}
+
+export {creaNews};
+export {getNews};
+export {getNewsByIdOrTitle};
+export {updateNews};
+export {deleteNews};

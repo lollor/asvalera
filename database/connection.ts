@@ -6,12 +6,16 @@ const MONGO_URL =
 	"@asvalera.3bpbmot.mongodb.net/?retryWrites=true&w=majority";
 import mongoose from "mongoose";
 
-var database: mongoose.Connection;
+var database: mongoose.Connection | undefined;
+
+var databaseConnesso = false;
+
 async function connectDB() {
 	try {
 		const { connection } = await mongoose.connect(MONGO_URL);
 
 		if (connection.readyState === 1) {
+			databaseConnesso = true;
 			console.log(`MongoDB Connected: ${connection.host}`);
 		} else {
 			console.log(`MongoDB Connection Failed`);
@@ -19,13 +23,18 @@ async function connectDB() {
 		return connection;
 	} catch (err) {
 		console.error(err);
-		return Promise.reject(err);
+		return undefined;
 	}
 }
 
 export default async function getDb() {
-	if (!database) {
+	console.log("databaseConnesso: " + databaseConnesso);
+	/* if (database === undefined || !database) {
 		database = await connectDB();
+	} */
+	if (!databaseConnesso) {
+		database = await connectDB();
+		databaseConnesso = true;
 	}
 	return database;
 }

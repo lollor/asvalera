@@ -58,13 +58,13 @@ export default async function SquadraPage({ params: { squadra: nomeLinkSquadra }
             </div>
             <div>
                <h1 className="text-[32px]">Rosa giocatori</h1>
-               <table className="text-sm">
+               <table className="text-sm mx-auto my-4">
                   <thead>
                      <tr className="bg-blue-400">
                         <th>Num</th>
                         <th>Foto</th>
                         <th>Nome e Cognome</th>
-                        <th>Data di nascita</th>
+                        {/* <th>Data di nascita</th> */}
                         <th>Ruolo</th>
                      </tr>
                   </thead>
@@ -74,7 +74,7 @@ export default async function SquadraPage({ params: { squadra: nomeLinkSquadra }
                            <td className="text-center">{giocatore.numero}</td>
                            <td><img src={giocatore.linkImmagine} alt={giocatore.nome} className="object-contain h-12 w-12 md:w-14 md:h-14 border shadow-lg" /></td>
                            <td>{giocatore.nome} {giocatore.cognome}</td>
-                           <td>{giocatore.dataDiNascita}</td>
+                           {/* <td>{giocatore.dataDiNascita}</td> */}
                            <td className="text-center">{giocatore.ruolo.toLowerCase() === "portiere" ? "POR" : giocatore.ruolo.toLowerCase() === "difensore" ? "DIF" : giocatore.ruolo.toLowerCase() === "centrocampista" ? "CC" : giocatore.ruolo.toLowerCase() === "attaccante" ? "ATT" : "N/A"}</td>
                         </tr>
                      ))}

@@ -6,21 +6,18 @@
 		@apply border border-gray-400 shadow-[0px_8px_15px_5px_rgba(0,0,0,0.17)] rounded-lg;
 	}
    .image-container {
-      @apply w-full sm:h-[300px];
+      @apply w-full sm:h-[250px];
    }
-	.image-container img {
-		@apply rounded-t-lg mx-auto sm:h-full;
-	}
-	.card img {
-		@apply border-b border-gray-400 object-contain;
+	.image-container > img {
+		@apply rounded-t-lg mx-auto object-contain h-full border-b border-gray-400;
 	}
 	.informazioni {
 		@apply p-2 flex justify-between items-center;
 	}
 	.informazioni p {
-		@apply text-slate-500 text-sm md:text-base;
+		@apply text-slate-500 text-sm md:text-base text-right w-2/5;
 	}
 	.informazioni h3 {
-		@apply text-[1.25em] sm:text-[1.35em] md:text-[1.55em] lg:text-[1.75em] font-bold;
+		@apply text-[1.25em] sm:text-[1.35em] md:text-[1.45em] font-bold w-3/4;
 	}
 }

@@ -45,10 +45,10 @@ export default function Page() {
                   <h2>Via Friuli 18, Valera di Varedo, MB</h2>
                   <iframe src="https://maps-api-ssl.google.com/maps?hl=it&ll=45.600963,9.174399&output=embed&q=45.599566,9.177039+(Via+Friuli)&z=16" />
                </div>
-               <div className="map">
+               {/* <div className="map">
                   <h2>Via San Giuseppe 2, Varedo, MB</h2>
                   <iframe src="https://maps-api-ssl.google.com/maps?hl=it&ll=45.597771,9.155897&output=embed&q=Via+San+Giuseppe,+20814+Varedo+MB,+Italia+(Via+San+Giuseppe)&z=16" />
-               </div>
+               </div> */}
             </div>
          </div>
       </>

@@ -24,6 +24,16 @@ export type Giocatore = {
    dataDiNascita: string,
 }
 
+export type News = {
+   _id: string,
+   titolo: string,
+   sottotitolo: string,
+   testo: string,
+   linkImmagine: string,
+   data: string,
+   autore: string,
+}
+
 export type Response = {
    status: boolean,
    message: string,

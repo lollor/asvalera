@@ -3,12 +3,12 @@
 @tailwind utilities;
 @layer utilities {
 	.card-container {
-		@apply sm:grid sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4;
+		@apply sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4;
 	}
 	.card-container > .card {
 		@apply my-4 ;
 	}
-	.card-container > .card > .image-container {
+	/* .card-container > .card > .image-container {
 		@apply sm:h-[300px] md:h-[400px] lg:h-[500px];
-	}
+	} */
 }
