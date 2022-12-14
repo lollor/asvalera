@@ -11,6 +11,7 @@ export default function Page() {
          <div className="sezione">
             <h1 className="titoletto">News</h1>
             {/* <p className="font-bold text-center md:text-[26px]">Pagina in costruzione</p> */}
+            {/* @ts-ignore */}
             <CardContainer />
          </div>
          <div className="sezione">
