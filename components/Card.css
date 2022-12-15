@@ -6,10 +6,10 @@
 		@apply border border-gray-400 shadow-[0px_8px_15px_5px_rgba(0,0,0,0.17)] rounded-lg;
 	}
    .image-container {
-      @apply w-full sm:max-h-[250px];
+      @apply w-full /* sm:max-h-[250px] */ relative h-[200px] xl:h-[300px];
    }
 	.image-container > img {
-		@apply rounded-t-lg mx-auto object-contain h-full border-b border-gray-400;
+		@apply rounded-t-lg mx-auto border-b  border-gray-400;
 	}
 	.informazioni {
 		@apply p-2 flex justify-between items-center;
@@ -18,6 +18,6 @@
 		@apply text-slate-500 text-sm md:text-base text-right w-2/5;
 	}
 	.informazioni h3 {
-		@apply text-[1.25em] sm:text-[1.35em] md:text-[1.45em] font-bold w-3/4;
+		@apply text-[1.25em] md:text-[1.35em] xl:text-[1.45em] font-bold w-3/4;
 	}
 }

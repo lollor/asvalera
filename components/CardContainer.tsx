@@ -22,7 +22,9 @@ export default async function CardContainer() {
                     )
                 })
             }
-            <Card img={"/files/festa-natale.jpg"} title={"Festa di natale"} added_date={"29/11/2022"} horizontal={true} classes={"sm:col-start-1 lg:col-start-2"}/>
+            <Card img={"/files/festa-natale.jpg"} title={"Festa di natale"} added_date={"29/11/2022"} />
+            <Card img={"/files/bambini1.jpg"} title={"Festa di natale"} added_date={"29/11/2022"} />
+            <Card img={"/files/trapattoni.jpg"} title={"Festa di natale"} added_date={"29/11/2022"} />
         </div>
     )
 }
