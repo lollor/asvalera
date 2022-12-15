@@ -6,7 +6,7 @@
 		@apply border border-gray-400 shadow-[0px_8px_15px_5px_rgba(0,0,0,0.17)] rounded-lg;
 	}
    .image-container {
-      @apply w-full sm:h-[250px];
+      @apply w-full sm:max-h-[250px];
    }
 	.image-container > img {
 		@apply rounded-t-lg mx-auto object-contain h-full border-b border-gray-400;

@@ -31,10 +31,10 @@ export default function Page(){
             </div>
             <div className="sezione">
                 <div className="md:flex md:items-end md:gap-2 justify-between">
-                    <div>
+                    {/* <div>
                         <h1 className="text-center text-2xl font-bold md:text-3xl">QUOTE D'ISCRIZIONE</h1>
                         <img src={quote.src} className="h-[350px] w-auto mx-auto lg:h-[450px] my-4 border border-opacity-50 shadow-2xl" ></img>
-                    </div>
+                    </div> */}
                     <div>
                         <h1 className="text-center text-2xl font-bold md:text-3xl">VADEMECUM</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl md:flex flex-col justify-center md:h-[450px]">
