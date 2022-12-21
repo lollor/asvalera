@@ -1,7 +1,19 @@
-export type Squadra = {
-   _id: string,
+type BaseObject = {
+   _createdAt: Date;
+   _updatedAt: Date;
+   _id: string;
+   _rev: string;
+   _type: string;
+}
+
+type Slug = {
+   _type: string,
+   current: string,
+}
+
+export interface Squadra extends BaseObject {
    nome: string,
-   nomeLink: string,
+   slug: Slug,
    categoria: string,
    campionato: string,
    girone: string,
@@ -11,27 +23,26 @@ export type Squadra = {
    responsabile: string,
    partita: string,
    allenamenti: string,
-   linkImmagine: string,
+   immagine: any,
 }
 
 export type Giocatore = {
-   _id: string,
    nome: string,
    cognome: string,
    ruolo: string,
    numero: string,
-   linkImmagine: string,
-   dataDiNascita: string,
+   immagine: string,
+   dataDiNascita: Date,
 }
 
-export type News = {
-   _id: string,
-   titolo: string,
-   sottotitolo: string,
-   testo: string,
-   linkImmagine: string,
-   data: string,
-   autore: string,
+export interface Post extends BaseObject {
+   author: string,
+   mainImage: any,
+   publishedAt: Date,
+   slug: Slug,
+   title: string,
+   body: any,
+   visible: boolean,
 }
 
 export type Response = {

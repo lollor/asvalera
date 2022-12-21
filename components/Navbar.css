@@ -16,6 +16,6 @@
         @apply p-2 text-2xl text-white block transition-all duration-300 hover:text-red-500 cursor-pointer
     }
     .overlay .closebtn {
-        @apply absolute top-5 right-11 text-[60px]
+        @apply absolute top-14 right-11 text-[60px]
     }
 }

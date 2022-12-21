@@ -4,7 +4,7 @@ import "./Card.css"
 type CardProps = {
     title: string;
     img: string;
-    added_date: string;
+    added_date: Date;
     horizontal?: boolean;
     col_start?: number;
     col_end?: number;
@@ -19,7 +19,7 @@ function Card(params : CardProps) {
             </div>
             <div className="informazioni">
                 <h3>{params.title}</h3>
-                <p>{params.added_date}</p>
+                <p>{new Date(params.added_date).toLocaleDateString()}</p>
             </div>
         </div>
     )

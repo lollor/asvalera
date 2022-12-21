@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "components/Navbar.js"  ],
+, "components/Navbar.js", "app/(frontend)/squadre/[squadra]/page-old.tsxx"  ],
   "exclude": [
     "node_modules"
   ]
