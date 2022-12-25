@@ -19,7 +19,7 @@ type PageProps = {
 
 const fetchSquadra = async (nomeLink: string) => {
    const query = groq`*[_type == "squadra" && slug.current == $slug][0]{
-      title
+      nome
    }`;
    const squadra : Squadra = await client.fetch(query, { slug: nomeLink });
    if (squadra === null) {
