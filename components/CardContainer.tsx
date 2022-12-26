@@ -7,6 +7,8 @@ import Card from "./Card"
 import "./CardContainer.css"
 import ClientSideRoute from "./ClientSideRoute"
 
+export const revalidate = 60;
+
 const fetchPost = async () => {
     const query = groq`*[_type == "post"]|order(publishedAt desc){
         title,
