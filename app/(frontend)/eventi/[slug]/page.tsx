@@ -31,7 +31,7 @@ export default async function page({ params: { slug } }: PageProps) {
    return (
       <article className="sezione">
          <h1 className="text-[32px] md:text-[38px] text-red-500 font-bold">{post.title}</h1>
-         <p className="text-[14px] lg:text-[16px] text-slate-500">Scritta il {new Date(post.publishedAt).toLocaleDateString()} da {post.author}</p>
+         <p className="text-[14px] lg:text-[16px] text-slate-500">Scritta il {new Date(post.publishedAt).toLocaleDateString('it-IT')} da {post.author}</p>
          <div className="relative w-full xl:w-[700px] mx-auto my-[15px] md:my-[30px] h-[200px] md:h-[300px] lg:h-[400px] xl:h-[500px]">
             <Image src={urlFor(post.mainImage).url()} className="object-cover object-center drop-shadow-lg rounded" fill alt={post.title} />
          </div>

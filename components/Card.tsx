@@ -19,7 +19,7 @@ function Card(params : CardProps) {
             </div>
             <div className="informazioni">
                 <h3>{params.title}</h3>
-                <p>{new Date(params.added_date).toLocaleDateString()}</p>
+                <p>{new Date(params.added_date).toLocaleDateString('it-IT')}</p>
             </div>
         </div>
     )
