@@ -2,6 +2,8 @@ import React from "react";
 import CardContainer from "../../components/CardContainer";
 import cinquepermille from "../../public/files/5x1000.jpg"
 
+export const revalidate = 60;
+
 export default function Page() {
    return (
       <>
