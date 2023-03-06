@@ -52,7 +52,7 @@ export default async function Squadre() {
                squadre.map((squadra, index) => {
                   return (
                      <div className="squadra-sm-screen" key={index}>
-                        <p><span>Categoria</span>: {squadra.nome} ({squadra.anno})</p>
+                        <p><span>Categoria</span>: {squadra.categoria} ({squadra.anno})</p>
                         <p><span>Squadra</span>: <Link className="underline uppercase text-blue-400 font-semibold" href={"/squadre/" + squadra.slug.current}>{squadra.nome}</Link></p>
                         <p><span>Responsabile</span>: {squadra.responsabile}</p>
                         <p><span>Allenamenti</span>: {squadra.allenamenti}</p>
