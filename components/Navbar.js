@@ -26,7 +26,7 @@ export default function Navbar() {
             link:"/progettoeducativo"
         },
         {
-            name:"Stagione sportiva 2022/23",
+            name:"Stagione sportiva 2023/24",
             link:"/squadre"
         },
         {

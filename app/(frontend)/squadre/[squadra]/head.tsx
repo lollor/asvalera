@@ -34,7 +34,7 @@ export default async function Head({ params: { squadra: nomeLinkSquadra } }: Pag
       <>
          <title>{`A.S.D. Valera - ${squadra}`}</title>
          <meta name="description" content={`A.S.D. Valera - ${squadra}`} />
-         <meta name="keywords" content={`La squadra ${squadra} 2022/2023 dell'ASD Valera, AS Valera`} />
+         <meta name="keywords" content={`La squadra ${squadra} 2023/2024 dell'ASD Valera, AS Valera`} />
       </>
    );
 }
