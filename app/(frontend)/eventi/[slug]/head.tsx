@@ -26,12 +26,15 @@ export default async function Head({ params: { slug } }: PageProps){
    return (
       <>
          <title>{`A.S.D. Valera - ${info === undefined ? "":info.titolo}`}</title>
-         <meta name="description" content={`A.S.D. Valera - ${info === undefined ? "":info.titolo}, ${info === undefined || info.corpo === null || info.corpo === undefined ? "":info.corpo.map(child => {
+         <meta name="robots" content="index, follow" />
+         <meta name="author" content="A.S.D. Valera" />
+         <meta name="description" content={`A.S.D. Valera - ${info === undefined ? "":info.titolo}`}/>
+         {/* <meta name="description" content={`A.S.D. Valera - ${info === undefined ? "":info.titolo}, ${info === undefined || info.corpo === null || info.corpo === undefined ? "":info.corpo.map(child => {
             return child.children.map(grandchild => {
                return grandchild.text;
             }
          ).join(" ")}).join(" ")
-         }`} />
+         }`} /> */}
          <meta name="keywords" content={`Pagina evento ${info === undefined ? "":info.titolo} dell'ASD Valera, AS Valera`} />
       </>
    );
