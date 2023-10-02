@@ -81,7 +81,14 @@ export default async function Pagina({ params: { squadra: squadraLink } }: PageP
                            {/* <td><img src={giocatore.immagine} alt={giocatore.nome} className="object-contain " /></td> */}
                            <td>{giocatore.nome} {giocatore.cognome}</td>
                            {/* <td>{giocatore.dataDiNascita}</td> */}
-                           <td className="text-center">{giocatore.ruolo.toLowerCase() === "portiere" ? "POR" : giocatore.ruolo.toLowerCase() === "difensore" ? "DIF" : giocatore.ruolo.toLowerCase() === "centrocampista" ? "CC" : giocatore.ruolo.toLowerCase() === "attaccante" ? "ATT" : "N/A"}</td>
+                           <td className="text-center">{
+                              giocatore.ruolo ? (
+                              giocatore.ruolo.toLowerCase() === "portiere" ? "POR" 
+                              : giocatore.ruolo.toLowerCase() === "difensore" ? "DIF" 
+                              : giocatore.ruolo.toLowerCase() === "centrocampista" ? "CC" 
+                              : giocatore.ruolo.toLowerCase() === "attaccante" ? "ATT" : "N/A"
+                              ) : "N/A"
+                           }</td>
                         </tr>
                      ))}
                   </tbody>
