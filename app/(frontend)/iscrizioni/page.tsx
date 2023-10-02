@@ -7,7 +7,7 @@ export default function Page(){
             <div className="sezione">
                 <h1 className="titoletto text-red-500 lg:text-5xl pb-3 italic">ISCRIZIONI STAGIONE SPORTIVA 2023/2024</h1>
                 <div className="md:flex gap-8 justify-between my-[30px]">
-                    <div className="lg:w-2/3">
+                    {/* <div className="lg:w-2/3">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">OPEN DAY</h1>
                         <div className="my-4 border border-opacity-50  mx-auto block shadow-2xl">
                             <img src={logo.src} className="lg:h-[450px] h-[150px] object-contain mx-auto"></img>
@@ -15,8 +15,8 @@ export default function Page(){
                                 <a href={"/files/iscrizioni/openday.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Scarica il file</a>
                             </div>
                         </div>
-                    </div>
-                    <div className="lg:w-2/3">
+                    </div> */}
+                    <div className="lg:w-2/3 mx-auto">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">ATLETI</h1>
                         <div className="my-4 border border-opacity-50  mx-auto block shadow-2xl">
                             <img src={logo.src} className="lg:h-[450px] h-[150px] object-contain mx-auto"></img>
@@ -40,7 +40,7 @@ export default function Page(){
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl">
                             <img src={logo.src} className="lg:h-[350px] h-[150px] object-contain mx-auto"></img>
                             <div className="md:flex justify-around px-8 gap-4 items-center">
-                                <a href={"/files/iscrizioni/di_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Minorenne {"(≥16 anni)"}</a>
+                                <a href={"/files/iscrizioni/di_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Minorenne {"(≤16 anni)"}</a>
                                 <a href={"/files/iscrizioni/di_maggiorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Maggiorenne</a>
                             </div>
                         </div>
