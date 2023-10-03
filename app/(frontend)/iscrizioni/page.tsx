@@ -40,7 +40,7 @@ export default function Page(){
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl">
                             <img src={logo.src} className="lg:h-[350px] h-[150px] object-contain mx-auto"></img>
                             <div className="md:flex justify-around px-8 gap-4 items-center">
-                                <a href={"/files/iscrizioni/di_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Minorenne {"(≤16 anni)"}</a>
+                                <a href={"/files/iscrizioni/di_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Minorenne {"(≥16 anni)"}</a>
                                 <a href={"/files/iscrizioni/di_maggiorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Maggiorenne</a>
                             </div>
                         </div>
