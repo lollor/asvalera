@@ -48,7 +48,7 @@ export default function Page(){
                     <div className="">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">DIRIGENTI</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl md:h-[50vh] md:flex flex-col justify-center">
-                            <div className="relative aspect-square w-full mx-auto">
+                            <div className="relative aspect-square w-1/2 md:w-full mx-auto">
                                 <Image src={logo} alt="Logo" fill className="object-contain" />
                             </div>
                             <div className="md:flex justify-around px-8 gap-4 items-center">
@@ -60,7 +60,7 @@ export default function Page(){
                     <div className="">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">VADEMECUM</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl md:h-[50vh] md:flex flex-col justify-center ">
-                            <div className="relative aspect-square w-full mx-auto">
+                            <div className="relative aspect-square w-1/2 md:w-full mx-auto">
                                 <Image src={logo} alt="Logo" fill className="object-contain" />
                             </div>
                             <a href={"/files/iscrizioni/vademecum.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Scarica file</a>

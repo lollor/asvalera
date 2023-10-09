@@ -16,7 +16,7 @@ export default function Page() {
    return (
       <>
          <div className="shadow-xl lg:my-4">
-            <div className="relative w-full rounded h-[350px] overflow-hidden">
+            <div className="relative w-full rounded h-[85px] lg:h-[350px] overflow-hidden">
                <Image fill className="object-cover" alt="ASValera" placeholder="blur" src={striscione} />
             </div>
          </div>
