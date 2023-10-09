@@ -1,6 +1,17 @@
 import "../../styles/globals.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+   title: {
+      template: "%s | A.S.D. Valera",
+      default: 'A.S.D. Valera',
+   },
+   description: 'Sito ufficiale della A.S.D. Valera Calcio',
+   keywords: 'Valera, Calcio, A.S.D., A.S.D. Valera, A.S.D. Valera Calcio'
+}
+
 
 export default function RootLayout({
    children,

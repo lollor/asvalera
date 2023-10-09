@@ -6,6 +6,7 @@ import Image from "next/image";
 import { urlFor } from "../../../../lib/urlFor";
 import { PortableText } from "@portabletext/react"
 import { RichTextComponents } from "../../../../components/RichTextComponents";
+import type { Metadata } from "next";
 
 export const revalidate = 60;
 
@@ -13,6 +14,20 @@ type PageProps = {
    params: {
       slug: string
    }
+}
+
+export async function generateMetadata({params }: PageProps): Promise<Metadata> {
+   const post = await fetchPost(params.slug);
+
+   return {
+      title: `A.S.D. Valera - ${post.title}`,
+      robots: "index, follow",
+      authors: {
+         name: "A.S.D. Valera",
+      },
+      description: `A.S.D. Valera - ${post.title}`,
+      keywords: `Pagina evento ${post.title} dell'ASD Valera, AS Valera`
+   };
 }
 
 const fetchPost = async (slug: string) => {

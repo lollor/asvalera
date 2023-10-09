@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Email from "./Email";
 import "./style.css"
+
+export const metadata: Metadata = {
+   title: "Contatti",
+   description: "Pagina contatti dell'ASD Valera",
+   keywords: "Pagina contatti dell'ASD Valera, AS Valera",
+}
 
 export default function Page() {
    return (

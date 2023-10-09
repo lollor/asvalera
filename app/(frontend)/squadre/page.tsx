@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { groq } from "next-sanity";
 import Link from "next/link";
 import { client } from "../../../lib/sanity.client";
@@ -13,6 +14,12 @@ const fetchSquadre = async () => {
       return [] as Squadra[];
    }
    return squadre;
+}
+
+export const metadata:Metadata = {
+   title: 'Squadre',
+   description: 'Le nostre squadre della stagione sportiva 2023/2024',
+   keywords: 'Le squadre della stagione sportiva 2023/2024 dell\'ASD Valera, AS Valera'
 }
 
 export default async function Squadre() {

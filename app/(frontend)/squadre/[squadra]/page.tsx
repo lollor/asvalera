@@ -3,15 +3,36 @@ import { notFound } from "next/navigation";
 import { client } from "../../../../lib/sanity.client";
 import Image from "next/image";
 import { urlFor } from "../../../../lib/urlFor";
-import { Giocatore, Squadra } from "../../../../typings";
+import { Squadra } from "../../../../typings";
 import "./style.css";
+import type { Metadata } from "next";
 
-export const revalidate = 60;
+export const dynamic = 'force-dynamic'
 
 type PageProps = {
    params: {
       squadra: string
    }
+}
+
+export async function generateMetadata({params }: PageProps): Promise<Metadata> {
+   const fetchSquadraNome = async (nomeLink: string) => {
+      const query = groq`*[_type == "squadra" && slug.current == $slug][0]{
+         nome
+      }`;
+      const squadra : Squadra = await client.fetch(query, { slug: nomeLink });
+      if (squadra === null) {
+         return "Not Found";
+      }
+      return squadra.nome;
+   }
+   const squadraResult = await fetchSquadraNome(params.squadra);
+
+   return {
+      title: `A.S.D. Valera - ${squadraResult}`,
+      description: `A.S.D. Valera - ${squadraResult}`,
+      keywords: `La squadra ${squadraResult} 2023/2024 dell'ASD Valera, AS Valera`,
+   };
 }
 
 async function fetchSquadra(nomeSquadra:string) {
@@ -99,8 +120,8 @@ export default async function Pagina({ params: { squadra: squadraLink } }: PageP
    )
 };
 
-export async function generateStaticParams(){
+/* export async function generateStaticParams(){
    const query = groq`*[_type == "squadra"]{slug}`;
    const squadre: Squadra[] = await client.fetch(query);
    return squadre.map(squadra => ({squadra: squadra.slug.current } ));
-}
+} */

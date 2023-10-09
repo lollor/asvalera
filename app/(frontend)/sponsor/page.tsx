@@ -1,5 +1,13 @@
+import type { Metadata } from "next"
+import Image from "next/image"
 import golfetto from "../../../public/files/sponsor/golfetto.jpg"
 import zetadue from "../../../public/files/sponsor/zetadue.jpg"
+
+export const metadata: Metadata = {
+    title: "Sponsor",
+    description: "Gli Sponsor della ASD Valera",
+    keywords: "Gli Sponsor della ASD Valera, AS Valera Sponsor",
+}
 
 export default function Page(){
     return (
@@ -23,12 +31,16 @@ export default function Page(){
                 </div>
                 <div className="text-center lg:w-1/3">
                     <h1 className="titoletto text-red-500 lg:text-5xl pb-3 italic my-4">I nostri Sponsor</h1>
-                    <div className="flex flex-col justify-around gap-3 h-full">
+                    <div className="flex flex-col justify-around gap-6">
                         <a href="https://www.hotelgolfetto.com/" target={"_blank"}>
-                            <img src={golfetto.src} alt="sponsor" className="w-1/2 mx-auto shadow-2xl border" />
+                            {/* <div className="relative w-1/2 aspect-video shadow-2xl border mx-auto"> */}
+                                <Image src={golfetto} placeholder="blur" alt="sponsor" className="object-contain w-1/2 mx-auto border shadow-lg" />
+                            {/* </div> */}
                         </a>
                         <a href="https://www.informazione-aziende.it/Azienda_ZETA-DUE-DI-ZANON-MASSIMO" target={"_blank"}>
-                            <img src={zetadue.src} alt="sponsor" className="w-1/2 mx-auto shadow-2xl border" />
+                            {/* <div className="relative w-1/2 aspect-[3/4] shadow-2xl border mx-auto"> */}
+                                <Image  src={zetadue} placeholder="blur" alt="sponsor" className="object-contain w-1/2 mx-auto border shadow-lg" />
+                            {/* </div> */}
                         </a>
                     </div>
                 </div>
