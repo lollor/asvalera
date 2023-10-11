@@ -3,7 +3,7 @@ import Image from "next/image"
 import organigramma from "../../../public/files/organigramma.jpg"
 
 export const metadata: Metadata = {
-    title: "A.S.D. Valera - Organigramma",
+    title: "Organigramma",
     description: "L'Organigramma della società dell'ASD Valera",
     keywords: "L'Organigramma della società dell'ASD Valera, AS Valera",
 }

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-   title: "A.S.D. Valera - Eventi",
+   title: "Eventi",
    description: "Gli eventi dell'AS Valera",
    keywords: "Gli eventi dell'ASD Valera, AS Valera",
 }

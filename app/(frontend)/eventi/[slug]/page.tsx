@@ -20,7 +20,7 @@ export async function generateMetadata({params }: PageProps): Promise<Metadata> 
    const post = await fetchPost(params.slug);
 
    return {
-      title: `A.S.D. Valera - ${post.title}`,
+      title: `${post.title}`,
       robots: "index, follow",
       authors: {
          name: "A.S.D. Valera",

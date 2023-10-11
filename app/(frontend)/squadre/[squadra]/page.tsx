@@ -29,7 +29,7 @@ export async function generateMetadata({params }: PageProps): Promise<Metadata> 
    const squadraResult = await fetchSquadraNome(params.squadra);
 
    return {
-      title: `A.S.D. Valera - ${squadraResult}`,
+      title: `${squadraResult}`,
       description: `A.S.D. Valera - ${squadraResult}`,
       keywords: `La squadra ${squadraResult} 2023/2024 dell'ASD Valera, AS Valera`,
    };

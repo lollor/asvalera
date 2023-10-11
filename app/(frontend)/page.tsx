@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 export default function Page() {
    return (
       <>
-         <div className="shadow-xl lg:my-4">
-            <div className="relative w-full rounded h-[85px] lg:h-[350px] overflow-hidden">
-               <Image fill className="object-cover" alt="ASValera" placeholder="blur" src={striscione} />
-            </div>
+         <div className="lg:my-4">
+            {/* <div className="relative w-full rounded h-[85px] lg:h-[350px] overflow-hidden"> */}
+               <Image className="w-full shadow-xl rounded" alt="ASValera" placeholder="blur" src={striscione} />
+            {/* </div> */}
          </div>
          <div className="sezione">
             <h1 className="titoletto">News</h1>
