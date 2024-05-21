@@ -49,7 +49,7 @@ export default function Page() {
             </h1>
             <div className="md:flex gap-12">
                <div className="map">
-                  <h2>Via Friuli 18, Valera di Varedo, MB</h2>
+                  <h2>Via Friuli 20, Valera di Varedo, MB</h2>
                   <iframe src="https://maps-api-ssl.google.com/maps?hl=it&ll=45.600963,9.174399&output=embed&q=45.599566,9.177039+(Via+Friuli)&z=16" />
                </div>
                {/* <div className="map">

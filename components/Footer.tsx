@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="text-white md:flex gap-6 md:ml-3">
                         <div className="py-1">
                             <p className="font-bold text-red-500">A.S.D. Valera</p>
-                            <p>Via Friuli 18</p>
+                            <p>Via Friuli 20</p>
                             <p>20814 Varedo (MB)</p>
                             <p>Cod Fisc. <span className="font-bold underline">91112080154</span></p>
                             <div className="bg-white h-[1px] my-2"/>
