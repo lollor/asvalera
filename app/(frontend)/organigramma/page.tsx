@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Page(){
     return (
         <div className="sezione">
-            <h1 className="titoletto text-red-500 lg:text-5xl pb-3 italic">ORGANIGRAMMA SOCIETARIO<br /> STAGIONE SPORTIVA 2023/2024</h1>
+            <h1 className="titoletto text-red-500 lg:text-5xl pb-3 italic">ORGANIGRAMMA SOCIETARIO<br /> STAGIONE SPORTIVA 2024/2025</h1>
             <div className="md:px-[100px]">
                 <Image src={organigramma} placeholder="blur" alt="Organigramma" className="object-contain"/>
             </div>

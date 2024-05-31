@@ -18,8 +18,8 @@ const fetchSquadre = async () => {
 
 export const metadata:Metadata = {
    title: 'Squadre',
-   description: 'Le nostre squadre della stagione sportiva 2023/2024',
-   keywords: 'Le squadre della stagione sportiva 2023/2024 dell\'ASD Valera, AS Valera'
+   description: 'Le nostre squadre della stagione sportiva 2024/2025',
+   keywords: 'Le squadre della stagione sportiva 2024/2025 dell\'ASD Valera, AS Valera'
 }
 
 export default async function Squadre() {
