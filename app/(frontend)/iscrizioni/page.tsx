@@ -14,9 +14,9 @@ export default function Page(){
         <>
             <div className="sezione">
                 <h1 className="titoletto text-red-500 lg:text-5xl pb-3 italic">ISCRIZIONI STAGIONE SPORTIVA 2024/2025</h1>
-                <h2 className="text-[24px] font-bold text-center md:text-[28px] lg:text-[32px] text-red-500 underline">Pre-iscrizioni aperte</h2>
-                <div className="grid mx-auto md:w-2/3 gap-8 grid-cols-1 md:grid-cols-2 my-[30px]">
-                    <div className="w-full">
+                {/* <h2 className="text-[24px] font-bold text-center md:text-[28px] lg:text-[32px] text-red-500 underline">Pre-iscrizioni aperte</h2> */}
+                <div className="grid mx-auto md:w-2/3 gap-8 grid-cols-1 my-[30px]"/* md:grid-cols-2 */>
+                    {/* <div className="w-full">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">PRE-ISCRIZIONI</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl">
                             <div className="relative aspect-square w-1/2 mx-auto">
@@ -26,7 +26,7 @@ export default function Page(){
                                 <a href={"/files/iscrizioni/preiscr_minorenne.pdf"} target="_blank" className="block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Scarica il file</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="mx-auto w-full">
                         <h1 className="text-center text-2xl font-bold md:text-3xl">ATLETI</h1>
                         <div className="my-4 border border-opacity-50 mx-auto block shadow-2xl">
