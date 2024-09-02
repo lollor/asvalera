@@ -34,8 +34,8 @@ export default function Page(){
                                 <Image src={logo} placeholder="blur" alt="Logo" fill className="object-contain" />
                             </div>
                             <div className="md:flex justify-around px-8 gap-4 items-center">
-                                <a href={/* "/files/iscrizioni/at_minorenne.pdf" */ "#/"} /* target="_blank" */ className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Minorenne</a>
-                                <a href={/* "/files/iscrizioni/at_maggiorenne.pdf" */ "#/"} /* target="_blank" */ className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Maggiorenne</a>
+                                <a href={"/files/iscrizioni/at_minorenne.pdf" /* "#/" */} target="_blank" className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Minorenne</a>
+                                <a href={"/files/iscrizioni/at_maggiorenne.pdf" /* "#/" */} target="_blank" className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Maggiorenne</a>
                             </div>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ export default function Page(){
                                 <Image src={logo} alt="Logo" fill className="object-contain" />
                             </div>
                             <div className="md:flex justify-around px-8 gap-4 items-center">
-                                <a href={/* "/files/iscrizioni/di_minorenne.pdf" */ "#/"} /* target="_blank" */ className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Minorenne <br />{"(≥16 anni)"}</a>
-                                <a href={/* "/files/iscrizioni/di_maggiorenne.pdf" */ "#/"} /* target="_blank" */ className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Maggiorenne</a>
+                                <a href={"/files/iscrizioni/di_minorenne.pdf" /* "#/" */} target="_blank" className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Minorenne <br />{"(≥16 anni)"}</a>
+                                <a href={"/files/iscrizioni/di_maggiorenne.pdf" /* "#/" */} target="_blank" className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] xl:text-[22px] text-center pb-2 font-bold">Maggiorenne</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ export default function Page(){
                             <div className="relative aspect-square w-1/2 mx-auto">
                                 <Image src={logo} alt="Logo" fill className="object-contain" />
                             </div>
-                            <a href={/* "/files/iscrizioni/vademecum.pdf" */ "#/"} /* target="_blank" */ className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Scarica file</a>
+                            <a href={"/files/iscrizioni/vademecum.pdf" /* "#/" */} target="_blank" className="hover:cursor-not-allowed opacity-40 transition-all duration-300 block text-blue-400 md:text-[20px] lg:text-[26px] md:inline-block text-center pb-2 font-bold">Scarica file</a>
                         </div>
                     </div>
                     <div className="">
