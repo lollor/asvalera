@@ -38,8 +38,8 @@ export default function Navbar() {
             link:"/modulistica",
         },
         {
-            name:"Eventi",
-            link:"/eventi",
+            name:"Tutela dei minori",
+            link:"/tuteladeiminori",
         },
         {
             name:"Organigramma societario",

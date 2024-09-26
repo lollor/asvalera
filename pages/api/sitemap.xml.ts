@@ -9,31 +9,34 @@ function generateSiteMap(posts:any, squadre:Squadra[]) {
    return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}</loc>
+       <loc>https://www.asdvalera.it</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/progettoeducativo</loc>
+       <loc>https://www.asdvalera.it/progettoeducativo</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/squadre</loc>
+       <loc>https://www.asdvalera.it/squadre</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/iscrizioni</loc>
+       <loc>https://www.asdvalera.it/iscrizioni</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/modulistica</loc>
+       <loc>https://www.asdvalera.it/modulistica</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/eventi</loc>
+       <loc>https://www.asdvalera.it/eventi</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/organigramma</loc>
+       <loc>https://www.asdvalera.it/organigramma</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/sponsor</loc>
+       <loc>https://www.asdvalera.it/sponsor</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_URL}/contatti</loc>
+       <loc>https://www.asdvalera.it/contatti</loc>
+     </url>
+     <url>
+       <loc>https://www.asdvalera.it/tuteladeiminori</loc>
      </url>
      ${posts.map((post:any) => {
            return `<url><loc>${process.env.NEXT_PUBLIC_URL+"/eventi/"+post.slug.current}</loc></url>`;
