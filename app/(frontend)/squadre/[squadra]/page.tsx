@@ -32,6 +32,9 @@ export async function generateMetadata({params }: PageProps): Promise<Metadata> 
       title: `${squadraResult}`,
       description: `A.S.D. Valera - ${squadraResult}`,
       keywords: `La squadra ${squadraResult} 2024/2025 dell'ASD Valera, AS Valera`,
+      alternates: {
+         canonical: `/squadre/${params.squadra}`
+      }
    };
 }
 

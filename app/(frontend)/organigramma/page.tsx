@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: "Organigramma",
     description: "L'Organigramma della società dell'ASD Valera",
     keywords: "L'Organigramma della società dell'ASD Valera, AS Valera",
+    alternates: {
+        canonical: "/organigramma"
+    }
 }
 
 export default function Page(){

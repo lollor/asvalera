@@ -6,6 +6,9 @@ export const metadata: Metadata = {
    title: "Contatti",
    description: "Pagina contatti dell'ASD Valera",
    keywords: "Pagina contatti dell'ASD Valera, AS Valera",
+   alternates: {
+      canonical: "/contatti"
+   }
 }
 
 export default function Page() {

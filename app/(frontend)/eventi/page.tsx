@@ -8,6 +8,9 @@ export const metadata: Metadata = {
    title: "Eventi",
    description: "Gli eventi dell'AS Valera",
    keywords: "Gli eventi dell'ASD Valera, AS Valera",
+   alternates: {
+      canonical: "/eventi"
+   }
 }
 
 export default function page() {

@@ -6,7 +6,10 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
     title: 'Chi siamo',
     description: 'La nostra storia',
-    keywords: 'La storia dell\'ASD Valera, AS Valera'
+    keywords: 'La storia dell\'ASD Valera, AS Valera',
+    alternates: {
+        canonical: '/chi-siamo'
+    }
 }
 
 export default function Page() {

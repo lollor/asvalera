@@ -18,6 +18,7 @@ type PageProps = {
 
 export async function generateMetadata({params }: PageProps): Promise<Metadata> {
    const post = await fetchPost(params.slug);
+   const urlImage = urlFor(post.mainImage).url();
 
    return {
       title: `${post.title}`,
@@ -26,7 +27,33 @@ export async function generateMetadata({params }: PageProps): Promise<Metadata> 
          name: "A.S.D. Valera",
       },
       description: `A.S.D. Valera - ${post.title}`,
-      keywords: `Pagina evento ${post.title} dell'ASD Valera, AS Valera`
+      keywords: `Pagina evento ${post.title} dell'ASD Valera, AS Valera`,
+      alternates: {
+         canonical: `/eventi/${post.slug.current}`
+      },
+      openGraph: {
+         title: `${post.title}`,
+         description: `A.S.D. Valera - ${post.title}`,
+         type: "article",
+         url: `https://www.asdvalera.it/eventi/${post.slug.current}`,
+         locale: "it_IT",
+         siteName: "A.S.D. Valera",
+         images: [
+            {
+               url: urlImage,
+               height: 500,
+               width: 850,
+               alt: post.title
+            }
+         ]
+      },
+      twitter: {
+         card: "summary_large_image",
+         site: `https://www.asdvalera.it`,
+         title: `${post.title}`,
+         description: `A.S.D. Valera - ${post.title}`,
+         images: [urlImage]
+      }
    };
 }
 

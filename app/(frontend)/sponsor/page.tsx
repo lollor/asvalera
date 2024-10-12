@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     title: "Sponsor",
     description: "Gli Sponsor della ASD Valera",
     keywords: "Gli Sponsor della ASD Valera, AS Valera Sponsor",
+    alternates: {
+        canonical: "/sponsor"
+    }
 }
 
 export default function Page(){

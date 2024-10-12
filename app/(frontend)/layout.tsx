@@ -9,7 +9,8 @@ export const metadata: Metadata = {
       default: 'A.S.D. Valera',
    },
    description: 'Sito ufficiale della A.S.D. Valera Calcio',
-   keywords: 'Valera, Calcio, A.S.D., A.S.D. Valera, A.S.D. Valera Calcio'
+   keywords: 'Valera, Calcio, A.S.D., A.S.D. Valera, A.S.D. Valera Calcio',
+   metadataBase: new URL(process.env.NEXT_PUBLIC_URL!),
 }
 
 

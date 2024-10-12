@@ -3,9 +3,12 @@ import logo from "../../../public/files/logo.png"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-    title: 'Progetto educativo',
-    description: 'Il nostro progetto educativo',
-    keywords: 'Il progetto educativo dell\'ASD Valera, AS Valera'
+   title: 'Progetto educativo',
+   description: 'Il nostro progetto educativo',
+   keywords: 'Il progetto educativo dell\'ASD Valera, AS Valera',
+   alternates: {
+      canonical: '/progetto-educativo'
+   }
 }
 
 export default function Page(){

@@ -9,7 +9,26 @@ export const revalidate = 60;
 export const metadata: Metadata = {
    title: "Home | A.S.D. Valera",
    description: "A.S.D. Valera - Home",
-   keywords: "ASD Valera"
+   keywords: "ASD Valera",
+   alternates: {
+      canonical: "/"
+   },
+   openGraph: {
+      title: "Home | A.S.D. Valera",
+      description: "A.S.D. Valera - Home",
+      type: "website",
+      url: `https://www.asdvalera.it/`,
+      locale: "it_IT",
+      siteName: "A.S.D. Valera",
+      images: [
+         {
+            url: striscione.src,
+            height: 247,
+            width: 988,
+            alt: "ASD Valera"
+         }
+      ]
+   }
 }
 
 export default function Page() {

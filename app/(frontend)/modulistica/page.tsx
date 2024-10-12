@@ -4,7 +4,10 @@ import Image from "next/image"
 export const metadata: Metadata = {
    title: 'Modulistica',
    description: 'Modulistica ASD Valera',
-   keywords: 'Modulistica ASD Valera AS Valera'
+   keywords: 'Modulistica ASD Valera AS Valera',
+   alternates: {
+      canonical: '/modulistica'
+   }
 }
 
 export default function Page() {

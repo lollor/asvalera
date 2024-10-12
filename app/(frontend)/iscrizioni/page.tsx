@@ -6,7 +6,10 @@ import logo from "../../../public/files/logo.png"
 export const metadata:Metadata = {
     title: 'Iscrizioni',
     description: 'Iscrizioni stagione sportiva 2024/2025',
-    keywords: 'Pagina iscrizioni stagione sportiva 2024/2025 dell\'ASD Valera, AS Valera'
+    keywords: 'Pagina iscrizioni stagione sportiva 2024/2025 dell\'ASD Valera, AS Valera',
+    alternates: {
+        canonical: '/iscrizioni'
+    }
 }
 
 export default function Page(){
