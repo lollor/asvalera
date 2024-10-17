@@ -6,7 +6,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: 'Tutela dei minori',
     description: 'Qui troverai informazioni sulla tutela dei minori',
-    keywords: 'Tutela dei minori asd valera, tutela dei minori asdvalera, tutela dei minori asvalera, AS Valera'
+    keywords: 'Tutela dei minori asd valera, tutela dei minori asdvalera, tutela dei minori asvalera, AS Valera',
+    alternates: {
+        canonical: '/tuteladeiminori'
+    }
 }
 
 export default function Page() {
@@ -34,7 +37,7 @@ export default function Page() {
                 <Link href={"/files/tuteladeiminori/policy_genere.pdf"} className="inline-flex justify-center items-center text-center bg-red-500 text-white font-bold py-2 rounded-sm uppercase px-2">Policy genere</Link>
                 <Link href={"/files/tuteladeiminori/policy_discriminazione.pdf"} className="inline-flex justify-center items-center text-center bg-red-500 text-white font-bold py-2 rounded-sm uppercase px-2">Policy discriminazione</Link>
                 <Link href={"/files/tuteladeiminori/policy_minori.pdf"} className="inline-flex justify-center items-center text-center bg-red-500 text-white font-bold py-2 rounded-sm uppercase px-2">Policy minori</Link>
-                <Link href={"/files/tuteladeiminori/modulo_segnalazioni.pdf"} className="inline-flex justify-center items-center text-center bg-red-500 text-white font-bold py-2 rounded-sm uppercase px-2">Modulo di segnalazione</Link>
+                <Link href={"/files/tuteladeiminori/modulo_segnalazione.pdf"} className="inline-flex justify-center items-center text-center bg-red-500 text-white font-bold py-2 rounded-sm uppercase px-2">Modulo di segnalazione</Link>
             </div>
             <div className="md:h-[15vh]"/>
         </div>
