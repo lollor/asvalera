@@ -28,7 +28,7 @@ export default function RootLayout({
             <link rel="icon" href="/favicon.ico" />
             <link rel="apple-touch-icon" href="/favicon.ico" />
             <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-            <link rel="stylesheet" href="/global.css" />
+            {/* <link rel="stylesheet" href="/globals.css" /> */}
             <meta name="author" content="Lorenzo Raia" />
          </head>
          <body>

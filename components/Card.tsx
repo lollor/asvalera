@@ -18,7 +18,7 @@ function Card(params : CardProps) {
                 <Image priority alt={params.title} style={{objectFit:'contain'}} fill src={params.img} />
             </div>
             <div className="informazioni">
-                <h3>{params.title}</h3>
+                <h2>{params.title}</h2>
                 {/* <p>{new Date(params.added_date).toLocaleDateString('it-IT')}</p> */}
             </div>
         </div>

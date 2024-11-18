@@ -59,7 +59,8 @@ export default function Navbar() {
             <div className={"mainNavbar"}>
                 <div>
                     <Link href={"/"}> 
-                        <img className="h-[40px] md:h-[80px]" src="/files/logo.png"></img>
+                        <img className="h-[40px] md:h-[80px]" src="/files/logo.png" alt="logo asdvalera"></img>
+                        <span className="sr-only">ASD Valera</span>
                     </Link>
                 </div>
                 <div className="lg:flex gap-7 hidden">
@@ -70,7 +71,7 @@ export default function Navbar() {
                 <span className="text-lg cursor-pointer lg:hidden" onClick={openNav}>&#9776;</span>
             </div>
             <div id="navbarMenu" className={"overlay"}>
-                <a className={"closebtn"} onClick={closeNav}>&times;</a>
+                <span className={"closebtn"} onClick={closeNav}>&times;</span>
                 <div className={"overlaycontent"}>
                     {links.map((el,index) => {
                         return(<Link key={index} href={el.link} onClick={closeNav} className={el.classes}>{el.name}</Link>)
