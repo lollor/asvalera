@@ -2,6 +2,8 @@
 
 import "./Navbar.css"
 import Link from "next/link"
+import Logo from "../public/files/logo.png"
+import Image from "next/image";
 
 const openNav = () => {
     document.getElementById("navbarMenu").style.width = "100%"
@@ -58,8 +60,8 @@ export default function Navbar() {
         <>
             <div className={"mainNavbar"}>
                 <div>
-                    <Link href={"/"}> 
-                        <img className="h-[40px] md:h-[80px]" src="/files/logo.png" alt="logo asdvalera"></img>
+                    <Link href={"/"} className="block relative h-[40px] md:h-[80px] aspect-[659/524]">
+                        <Image fill src={Logo} alt="logo asdvalera" />
                         <span className="sr-only">ASD Valera</span>
                     </Link>
                 </div>
