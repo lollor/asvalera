@@ -15,7 +15,7 @@ function Card(params : CardProps) {
     return (
         <div className="card">
             <div className="image-container">
-                <Image priority alt={params.title} style={{objectFit:'contain'}} fill src={params.img} />
+                <Image priority alt={"Immagine post dell'articolo su "+params.title} style={{objectFit:'contain'}} fill src={params.img} />
             </div>
             <div className="informazioni">
                 <h2>{params.title}</h2>
