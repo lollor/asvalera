@@ -27,7 +27,7 @@ export async function generateMetadata({params }: PageProps): Promise<Metadata> 
          name: "A.S.D. Valera",
       },
       description: `A.S.D. Valera - ${post.title}`,
-      keywords: `Pagina evento ${post.title} dell'ASD Valera, AS Valera`,
+      keywords: `Pagina evento ${post.title} dell'ASD Valera, AS Valera, eventi, Eventi, Evento, evento, ${post.title}, ${post.title.split(" ").join(", ")}`,
       alternates: {
          canonical: `/eventi/${post.slug.current}`
       },
